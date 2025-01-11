@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
+    <!-- The character encoding for the document is set to UTF-8 -->
     <meta charset="UTF-8">
+
+    <!-- Ensures that the page is responsive and adapts to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ensures that the page is rendered in the latest version of IE (Internet Explorer) -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Cache control to set maximum age for caching -->
     <meta http-equiv="Cache-Control" content="max-age=31536000">
 
-        <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="DOIDOI" />
+    <!-- Open Graph Meta Tags for better social media sharing -->
+    <meta property="og:title" content="DOIDOI | Seoul-based Media Artist's Work" />
     <meta property="og:description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life." />
     <meta property="og:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true" />
     <meta property="og:type" content="website" />
 
+    <!-- Twitter Card Meta Tags for Twitter preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DOIDOI | Seoul-based Media Artist's Work" />
+    <meta name="twitter:description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life." />
+    <meta name="twitter:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true" />
+
+    <!-- Meta description to summarize the website's content (important for SEO) -->
+    <meta name="description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life. Showcasing various artistic works and projects." />
+
+    <!-- Keywords for SEO purposes -->
+    <meta name="keywords" content="media artist, Seoul, art, interactive, sensations, projects, DOIDOI" />
+
+    <!-- Directs search engines to index and follow the website's links -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- The title of the page, which appears in the browser tab -->
     <title>DOIDOI</title>
-  
-    <!-- Pretendard 웹폰트 preload 및 font-display: swap 속성 적용 -->
+
+    <!-- Preloading Pretendard web font with font-display: swap for better performance -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css" as="style" type="font/woff2" crossorigin="anonymous">
     
-    <!-- Google Fonts에서 Doto, Tilt Warp 폰트 preload 및 font-display: swap 속성 적용 -->
+    <!-- Preloading Doto and Tilt Warp fonts from Google Fonts with font-display: swap -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="style" type="font/woff2" crossorigin="anonymous">
   
-    <!-- Pretendard 웹폰트 파일을 font-display: swap 속성으로 적용 -->
+    <!-- Applying Pretendard font using font-display: swap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" />
     
-    <!-- Google Fonts에서 Doto, Tilt Warp 폰트 링크에 font-display 속성 추가 -->
+    <!-- Applying Doto and Tilt Warp fonts from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
   
-    <!-- 스타일시트 링크 -->
+    <!-- Linking to the external stylesheet for the page -->
     <link rel="stylesheet" href="styles/style.css">
   
-    <!-- 파비콘 설정 -->
+    <!-- Favicon settings for different sizes -->
     <link rel="icon" href="images/favicon/favicon16.png" sizes="16x16">
     <link rel="icon" href="images/favicon/favicon32.png" sizes="32x32">
     <link rel="icon" href="images/favicon/favicon48.png" sizes="48x48">
   
-    <!-- Masonry.js CDN 추가 -->
+    <!-- Including Masonry.js and imagesLoaded.js for creating a responsive grid layout -->
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    
+    <!-- Setting a base href for relative paths -->
     <base href="/DOIDOI/">
   </head>  
   
