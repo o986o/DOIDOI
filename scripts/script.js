@@ -58,6 +58,6 @@ function updateProjectDetails() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  updateProjectDetails();
   loadProjects();
+  updateProjectDetails();
 });
