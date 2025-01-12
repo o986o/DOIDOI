@@ -29,3 +29,10 @@ body {
   margin: 0 auto;
   padding: 0 0;
 }
+
+.project-details {
+  padding: 50px 20px;
+  margin: 0 auto;
+  color: #333;
+  overflow-x: hidden; /* 프로젝트 섹션에서 수평 스크롤 제거 */
+}

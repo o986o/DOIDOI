@@ -1,7 +1,7 @@
 .info {
     display: flex;
     justify-content: flex-start;
-    padding: 100px 0 20px 0;
+    padding: 5rem 0 1rem 0;
     background-color: transparent;
     margin-left: 0;
   }
@@ -12,7 +12,7 @@
     width: 100%;
     max-width: 1800px;
     flex-wrap: wrap;
-    margin-left: 10px;
+    margin-left: 1rem;
   }
   
   .info-section {
@@ -50,3 +50,18 @@
     text-decoration-style: solid;
   }
   
+  /* 작은 화면에서 폰트 크기 고정 */
+@media (max-width: 1024px) {
+  .info-section h2,
+  .info-section p {
+      font-size: .9rem !important; /* 강제로 폰트 크기 고정 */
+  }
+}
+
+/* 더 작은 화면에서도 폰트 크기 고정 */
+@media (max-width: 768px) {
+  .info-section h2,
+  .info-section p {
+      font-size: .9rem !important; /* 강제로 폰트 크기 고정 */
+  }
+}
