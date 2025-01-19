@@ -37,27 +37,29 @@
     <!-- The title of the page, which appears in the browser tab -->
     <title>DOIDOI</title>
 
-    <!-- Preloading Pretendard web font with font-display: swap for better performance -->
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css" as="style" type="font/woff2" crossorigin="anonymous">
-    
-    <!-- Preloading Doto and Tilt Warp fonts from Google Fonts with font-display: swap -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconnect to Google Fonts and JsDelivr for faster connection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <!-- Preload Pretendard font (woff2 format) with font-display: swap for better performance -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css" as="style" type="font/woff2" crossorigin="anonymous">
+
+    <!-- Preload Doto and Tilt Warp fonts (woff2 format) from Google Fonts -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="style" type="font/woff2" crossorigin="anonymous">
-  
-    <!-- Applying Pretendard font using font-display: swap -->
+
+    <!-- Apply Pretendard font with font-display: swap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" />
-    
-    <!-- Applying Doto and Tilt Warp fonts from Google Fonts -->
+
+    <!-- Apply Doto and Tilt Warp fonts from Google Fonts with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+
   
     <!-- Linking to the external stylesheet for the page -->
     <link rel="stylesheet" href="styles/style.css">
   
     <!-- Favicon settings for different sizes -->
-    <link rel="icon" href="images/favicon/favicon16.png" sizes="16x16">
-    <link rel="icon" href="images/favicon/favicon32.png" sizes="32x32">
-    <link rel="icon" href="images/favicon/favicon48.png" sizes="48x48">
+    <link rel="icon" href="images/favicon/favicon.svg">
   
     <!-- Including Masonry.js and imagesLoaded.js for creating a responsive grid layout -->
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
