@@ -1,68 +1,61 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- The character encoding for the document is set to UTF-8 -->
+    <!-- Character encoding set to UTF-8 for proper text rendering -->
     <meta charset="UTF-8">
 
-    <!-- Ensures that the page is responsive and adapts to different screen sizes -->
+    <!-- Ensures the page is responsive across different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Ensures that the page is rendered in the latest version of IE (Internet Explorer) -->
+    <!-- Ensures the page is rendered in the latest version of IE -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- Cache control to set maximum age for caching -->
+    <!-- Cache control for efficient caching -->
     <meta http-equiv="Cache-Control" content="max-age=31536000">
 
     <!-- Open Graph Meta Tags for better social media sharing -->
-    <meta property="og:title" content="DOIDOI | Media Artist" />
-    <meta property="og:description" content="between virtual and real" />
-    <meta property="og:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DOIDOI | Media Artist">
+    <meta property="og:description" content="between virtual and real">
+    <meta property="og:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true">
+    <meta property="og:type" content="website">
 
-    <!-- Twitter Card Meta Tags for Twitter preview -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DOIDOI | Media Artist" />
-    <meta name="twitter:description" content="between virtual and real" />
-    <meta name="twitter:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true" />
+    <!-- Twitter Card Meta Tags for optimized Twitter preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DOIDOI | Media Artist">
+    <meta name="twitter:description" content="between virtual and real">
+    <meta name="twitter:image" content="https://github.com/o986o/DOIDOI/blob/master/images/logo-link.png?raw=true">
 
-    <!-- Meta description to summarize the website's content (important for SEO) -->
-    <meta name="description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life. Showcasing various artistic works and projects." />
+    <!-- Meta description to summarize website content (important for SEO) -->
+    <meta name="description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life. Showcasing various artistic works and projects.">
 
     <!-- Keywords for SEO purposes -->
-    <meta name="keywords" content="media artist, Seoul, art, interactive, sensations, projects, DOIDOI" />
+    <meta name="keywords" content="media artist, Seoul, art, interactive, sensations, projects, DOIDOI">
 
-    <!-- Directs search engines to index and follow the website's links -->
-    <meta name="robots" content="index, follow" />
+    <!-- Instructions for search engines to index and follow links -->
+    <meta name="robots" content="index, follow">
 
-    <!-- The title of the page, which appears in the browser tab -->
+    <!-- Page title for the browser tab -->
     <title>DOIDOI</title>
 
-    <!-- Preloading Pretendard web font with font-display: swap for better performance -->
+    <!-- Preloading fonts for better performance -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css" as="style" type="font/woff2" crossorigin="anonymous">
-    
-    <!-- Preloading Doto and Tilt Warp fonts from Google Fonts with font-display: swap -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="style" type="font/woff2" crossorigin="anonymous">
-  
-    <!-- Applying Pretendard font using font-display: swap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" />
-    
-    <!-- Applying Doto and Tilt Warp fonts from Google Fonts -->
+
+    <!-- Linking external fonts and stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
-  
-    <!-- Linking to the external stylesheet for the page -->
+
+    <!-- Linking to external stylesheet for page styling -->
     <link rel="stylesheet" href="styles/style.css">
-  
-    <!-- Favicon settings for different sizes -->
-    <link rel="icon" href="images/favicon/favicon16.png" sizes="16x16">
-    <link rel="icon" href="images/favicon/favicon32.png" sizes="32x32">
-    <link rel="icon" href="images/favicon/favicon48.png" sizes="48x48">
-  
-    <!-- Including Masonry.js and imagesLoaded.js for creating a responsive grid layout -->
+
+    <!-- Favicon settings (SVG format for better scalability) -->
+    <link rel="icon" href="images/favicon/favicon.svg">
+
+    <!-- Including Masonry.js and imagesLoaded.js for responsive grid layout -->
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  </head>  
+</head>
+
   
 <body>
   <div class="container">
