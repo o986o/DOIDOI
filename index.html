@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <!-- The character encoding for the document is set to UTF-8 -->
     <meta charset="UTF-8">
-    <!-- Ensures that the page is responsive and adapts to different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Ensures that the page is rendered in the latest version of IE (Internet Explorer) -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Cache control to set maximum age for caching -->
-    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
     
     <meta property="og:title" content="DOIDOI | Media Artist" />
     <meta property="og:description" content="between virtual and real" />
@@ -21,22 +17,17 @@
     
     <meta name="description" content="DOIDOI is a Seoul-based media artist exploring unusual sensations in everyday life. Showcasing various artistic works and projects." />
     <meta name="keywords" content="media artist, Seoul, art, interactive, sensations, projects, DOIDOI" />
-    <meta name="robots" content="index, follow" />
-
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
     <title>DOIDOI</title>
 
-    <!-- Preloading fonts with corrected MIME type for Pretendard -->
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <!-- Linking to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
-  
-    <!-- Linking to external stylesheet -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" as="style" type="text/css" crossorigin="anonymous">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
 
-    <!-- Masonry.js and imagesLoaded.js (with defer to avoid blocking rendering) -->
     <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" defer></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js" defer></script>
 </head>
