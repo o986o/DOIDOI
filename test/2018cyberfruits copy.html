@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="max-age=31536000">
+    <title>DOIDOI</title>
+  
+    <!-- Preload web fonts -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?&display=swap" as="style" />
+    <link rel="preload" href="https://api.fontshare.com/css?f[]=clash-display@400,500,600,800&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="style" />
+  
+    <!-- Apply font-display swap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?&display=swap" />
+    <link href="https://api.fontshare.com/css?f[]=clash-display@400,500,600,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+  
+    <!-- Preconnect for fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- Other links and styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style-detail.css"> <!-- main stylesheet -->
+    <link rel="icon" href="../images/favicon/favicon16.png" sizes="16x16">
+    <link rel="icon" href="../images/favicon/favicon32.png" sizes="32x32">
+    <link rel="icon" href="../images/favicon/favicon48.png" sizes="48x48">
+  </head>
+  
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="logo"><a href="#"><img src="../images/doidoi-logo.png" loading="lazy" alt="DOIDOI Logo"></a></li>
+            <li class="project"><a href="../index.html">DOIDOI</a></li>
+            <li class="cv"><a href="../index.html"><i class="fa-sharp fa-light fa-x" 
+                style="font-family:'pretendard'; 
+                font-size: 30px; font-weight: 400;
+                color: #666;"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+<!-- Project Section with Dummy Image -->
+<section class="project-details">
+  <!-- 공통적인 부분 -->
+  <div class="projdetail-main-image">
+    <img src="../images/test/waiting.png" loading="lazy" alt="Dummy Image">
+  </div>
+  <div class="projdetail-content">
+    <div class="projdetail-title">
+      <p id="projdetail-title">scan 2 taste</p>
+      <p id="projdetail-type">Installation</p>
+      <p id="projdetail-sub">
+        2025, Web-based Interactive Video Art<br>
+        in Gandong Art Center, Seoul<br>
+        from August 14, 2025 to September 4, 2025
+      </p>
+    </div>
+    <div class="projdetail-description">
+      <!-- Description을 두 열로 나누기 위한 두 개의 p 태그 추가 -->
+      <p>
+        “Scan 2 Taste” reframes the QR code not as a digital utility, but as a threshold to simulated sensation.
+        Through a code masked in the texture of steak, viewers are invited to experience the pleasure of eating—without food, without substance.
+        What is sensed is not real, yet the mind registers it as such.
+        In this speculative system, nourishment is decoupled from consumption, and contact is no longer required for response.
+        The work situates us within a world where the protocols of perception have been fundamentally rewritten.
+      </p>
+      <p class="projdetail-description-kr">
+      《Scan 2 Taste》는 QR 코드를 단순한 디지털 도구가 아닌, 시뮬레이션된 감각의 입구로 재구성한다.
+        스테이크 텍스처로 위장된 코드를 통해 관객은 실체 없는 쾌락—먹지 않고도 느끼는 감각—에 접속하게 된다.
+        감각은 실재하지 않지만, 뇌는 그것을 실재로 받아들인다.
+        이 사변적 시스템에서, 포만감은 섭취와 분리되고, 반응은 접촉 없이 발생한다.
+        작품은 감각의 프로토콜이 근본적으로 재편된 세계 속으로 우리를 끌어들인다.
+      </p>
+    </div>
+    <div class="projdetail-skill"></div>
+    </div>    
+    
+    <!-- <div class="projdetail-images">
+        <iframe src="https://www.youtube.com/embed/Isu2pzOr-b0?autoplay=1" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>scan2taste</p>
+    </div> -->
+
+    <!-- 영상 팝업 전체화면 -->
+      <div id="video-popup" style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/Isu2pzOr-b0?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&showinfo=0&loop=1&playlist=Isu2pzOr-b0"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+  </section>
+  
+  
+  <!-- Footer -->
+  <footer>
+    <div id="animated-text-strip">
+      <div class="marquee">
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+      </div>
+      <div class="marquee">
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
+      </div>
+    </div>
+  </footer>
+  
+</div>
+
+<script src="../scripts/script.js"></script> <!-- Link to project-specific JS -->
+</body>
+</html>
