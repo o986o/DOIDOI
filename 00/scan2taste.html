@@ -57,7 +57,7 @@
     </div>
     <div class="projdetail-description">
       <p>
-        "Scan 2 Taste" reframes the QR code not as a digital utility, but as a threshold to simulated sensation.
+        “Scan 2 Taste” reframes the QR code not as a digital utility, but as a threshold to simulated sensation.
         Through a code masked in the texture of steak, viewers are invited to experience the pleasure of eating—without food, without substance.
         What is sensed is not real, yet the mind registers it as such.
       </p>
@@ -82,13 +82,10 @@
         justify-content: center;
         align-items: center;
       ">
-
-        
         <iframe
-          id="video-iframe"
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/hLyo2a9b4sk?autoplay=1&mute=0&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&vq=hd1440"
+          src="https://www.youtube.com/embed/hLyo2a9b4sk?autoplay=1&mute=1&loop=1&controls=1&showinfo=0&vq=hd1080&listType=playlist&list=PLylwyQo9y48PyinIdwCAUejDcJpaBlgM0"
           frameborder="0"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen
@@ -118,32 +115,6 @@
   
 </div>
 
-<script>
-// Auto-unmute after a brief delay to bypass browser restrictions
-document.addEventListener('DOMContentLoaded', function() {
-  const iframe = document.getElementById('video-iframe');
-  
-  // Try to unmute after page load
-  setTimeout(() => {
-    // Reload iframe with unmuted settings
-    iframe.src = 'https://www.youtube.com/embed/hLyo2a9b4sk?autoplay=1&mute=0&loop=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&vq=hd1440&enablejsapi=1';
-  }, 1000);
-  
-  // Fallback: user interaction to unmute
-  document.addEventListener('click', function() {
-    iframe.src = iframe.src.replace('mute=1', 'mute=0');
-  }, { once: true });
-});
-
-// Load original script if it exists
-if (typeof loadExternalScript === 'undefined') {
-  const script = document.createElement('script');
-  script.src = '../scripts/script.js';
-  script.onerror = function() {
-    console.log('External script not found, continuing without it');
-  };
-  document.head.appendChild(script);
-}
-</script>
+<script src="../scripts/script.js"></script>
 </body>
 </html>
