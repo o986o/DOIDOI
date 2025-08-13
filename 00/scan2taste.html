@@ -77,18 +77,10 @@
     <div id="animated-text-strip">
       <div class="marquee">
         <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-      </div>
+        </div>
       <div class="marquee">
         <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-        <span>© 2025 DOIDOI. ALL RIGHTS RESERVED</span>
-      </div>
+        </div>
     </div>
   </footer>
   
@@ -97,31 +89,27 @@
 <script src="../scripts/script.js"></script>
 
 <script>
-    // 1. YouTube IFrame Player API 스크립트를 비동기적으로 로드합니다.
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    // (수정됨) ▼▼▼ 여기에 유튜브 링크를 통째로 붙여넣으세요 ▼▼▼
+    // ▼▼▼ 여기에 유튜브 링크를 통째로 붙여넣으세요 ▼▼▼
     const YOUTUBE_URL = 'https://www.youtube.com/watch?v=hLyo2a9b4sk&list=PLylwyQo9y48PyinIdwCAUejDcJpaBlgM0';
 
     var player;
-    // 2. API 코드가 다운로드되면 이 함수가 자동으로 호출됩니다.
     function onYouTubeIframeAPIReady() {
-        // (수정됨) 붙여넣은 링크에서 영상 ID와 플레이리스트 ID를 자동으로 추출합니다.
+        // (수정됨) 붙여넣은 링크에서 '영상 ID'만 추출합니다. (플레이리스트 ID는 무시)
         let videoId = '';
-        let playlistId = '';
         try {
             const url = new URL(YOUTUBE_URL);
             videoId = url.searchParams.get('v');
-            playlistId = url.searchParams.get('list');
         } catch (e) {
             console.error("Invalid YouTube URL:", YOUTUBE_URL);
             return;
         }
 
-        const playerOptions = {
+        player = new YT.Player('youtube-player', {
             height: '100%',
             width: '100%',
             videoId: videoId,
@@ -129,6 +117,7 @@
                 'autoplay': 1,
                 'mute': 0,
                 'loop': 1,
+                'playlist': videoId, // (수정됨) 단일 영상 반복을 위해 영상 ID를 사용합니다.
                 'vq': 'hd1080',
                 'controls': 1,
                 'showinfo': 0,
@@ -139,20 +128,9 @@
             events: {
                 'onReady': onPlayerReady
             }
-        };
-
-        // (수정됨) 플레이리스트 ID가 있으면 플레이리스트 옵션을, 없으면 단일 영상 반복 옵션을 사용합니다.
-        if (playlistId) {
-            playerOptions.playerVars.listType = 'playlist';
-            playerOptions.playerVars.list = playlistId;
-        } else {
-            playerOptions.playerVars.playlist = videoId;
-        }
-
-        player = new YT.Player('youtube-player', playerOptions);
+        });
     }
 
-    // 3. 플레이어가 준비되면, 이 함수가 호출되어 영상을 재생합니다.
     function onPlayerReady(event) {
         event.target.playVideo();
         event.target.setPlaybackQuality('hd1080');
