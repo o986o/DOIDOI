@@ -1,4 +1,5 @@
 const projects = [
+  { title: 'Scan to Taste Series', imageUrl: 'images/projects/2025scan2taste/3.png', link: 'projects/2025scan2taste.html', type: 'installation' },
   { title: 'Seoul2050:Climate Control System', imageUrl: 'images/projects/2024seoulstation/2024seoulstation.jpg', link: 'projects/2024seoulstation.html', type: 'Media Facade' },
   { title: 'Appetizer-Lemon', imageUrl: 'images/projects/20240restaurant/appetizer.jpg', link: 'projects/20240restaurant-appetizer.html', type: 'Installation' },
   { title: 'Main-Virtual Dining', imageUrl: 'images/projects/20240restaurant/main.jpg', link: 'projects/20240restaurant-main.html', type: 'Interactive Art' },
