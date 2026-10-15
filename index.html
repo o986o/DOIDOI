@@ -49,10 +49,13 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" as="style" type="font/woff2" crossorigin="anonymous">
 
     <!-- Apply Pretendard font with font-display: swap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" />
+    <!-- Non-blocking: if the CDN is slow or down, the page renders with fallback fonts instead of waiting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.3/dist/web/pretendard.css?display=swap" /></noscript>
 
     <!-- Apply Doto and Tilt Warp fonts from Google Fonts with font-display: swap -->
-    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tilt+Warp&display=swap" rel="stylesheet"></noscript>
 
   
     <!-- Linking to the external stylesheet for the page -->
@@ -62,8 +65,9 @@
     <link rel="icon" href="images/favicon/favicon.svg">
   
     <!-- Including Masonry.js and imagesLoaded.js for creating a responsive grid layout -->
-    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- Self-hosted (was unpkg.com): an external CDN stall used to block the whole page render -->
+    <script src="scripts/vendor/masonry.pkgd.min.js"></script>
+    <script src="scripts/vendor/imagesloaded.pkgd.min.js"></script>
   </head>  
   
 <body>
